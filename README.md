@@ -28,9 +28,3 @@
 
 ## Usage Instructions
 Once the system is set up and running, the transmitter sends honking signals while the receiver listens and responds accordingly.
-
-## License
-This project is open-source under the **MIT License**.
-
-## Contact
-For inquiries, please reach out at: [your-email@example.com]
