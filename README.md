@@ -1,32 +1,36 @@
+
 # SilentSignal - Noiseless Vehicle Horn System
 
-## Overview
-SilentSignal is an innovative project designed to reduce vehicle noise pollution by internalizing vehicle communication and selective signaling. This system uses wireless communication between vehicles and IR sensors to reduce honking frequency, improving both road safety and public health.
+**SilentSignal** is an innovative solution to reduce traffic noise pollution by replacing traditional honking with a wireless communication system between vehicles. This project uses **Arduino** and **NRF24L01** modules to enable vehicle-to-vehicle communication for selective signaling and honking.
 
 ## Features
-- **Internalized Communication**: Enables vehicles to communicate without honking loudly.
-- **Selective Signaling**: Reduces honking frequency while ensuring safety.
-- **Health & Safety**: Minimizes the negative impact of noise pollution on health.
+- Wireless communication between vehicles to send/receive honking signals.
+- Reduces the frequency of honking, thus improving public health.
+- Components used: **Arduino**, **NRF24L01 Wireless Modules**, **IR Sensors**, and **LCD Modules**.
 
-## Components
-- Arduino Mega 2560 R3
-- 16X2 Serial LCD Modules
-- NRF24L01+ 2.4GHz Wireless Transceiver Modules
-- IR Sensors
-- Audio Modules
-- And more...
+## Installation Guide
+1. **Hardware Requirements**:
+   - Arduino Mega/UNO/NANO
+   - NRF24L01 Wireless Transceiver Modules
+   - 16x2 LCD Modules
+   - IR Sensors
+   - Audio driver module (optional for sound)
 
-## Budget
-Total Estimated Budget: BDT 8000
+2. **Software Setup**:
+   - Download and install Arduino IDE: [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
+   - Install the **RF24** library via the Arduino IDE's library manager.
 
-## References
-- [Researchgate Article](https://www.researchgate.net/publication/338107992_Design_of_a_Smart_Real-time_Excessive_Honking_Control_System)
-- [IRJMETS Paper](https://www.irjmets.com/uploadedfiles/paper/issue_5_may_2022/24235/final/fin_irjmets1654229519.pdf)
+3. **Wiring Setup**:
+   - Connect **NRF24L01** to your Arduino according to the wiring guide.
+   - Connect **LCD modules** and **IR sensors** as per the circuit diagram.
 
-## Installation Instructions
-1. Download the repository.
-2. Upload the **SilentSignal.ino** code to your Arduino Mega.
-3. Connect the hardware components as per the instructions in the documentation.
+4. Upload the **Transmitter Code** to the transmitting vehicle's Arduino and the **Receiver Code** to the receiving vehicle's Arduino.
 
-## Contributing
-Feel free to fork this repository and contribute improvements or bug fixes.
+## Usage Instructions
+Once the system is set up and running, the transmitter sends honking signals while the receiver listens and responds accordingly.
+
+## License
+This project is open-source under the **MIT License**.
+
+## Contact
+For inquiries, please reach out at: [your-email@example.com]
