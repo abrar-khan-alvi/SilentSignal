@@ -23,8 +23,10 @@ Vehicle honking has become a significant source of noise pollution in busy citie
 - **Batteries**
 - **Jumper Wires**
 
+
 ## Implementation
 ### System Design
+![image alt](https://github.com/abrar-khan-alvi/SilentSignal/blob/main/Screenshot%202025-05-03%20195413.png)
 The system consists of two main components:
 - **Sender**: The vehicle sending the alert (i.e., honking signal). It includes the Arduino board, NRF24L01+ transceiver, and an MP3 module for playing sound inside the vehicle.
 - **Receiver**: The nearby vehicle receiving the honk signal. It uses an NRF24L01+ module, IR sensors, and speakers for delivering the sound alert.
@@ -44,6 +46,7 @@ The communication is done wirelessly between vehicles, using the NRF24L01+ trans
 ## Challenges
 - **GPS Module Integration**: We initially used Neo-6M GPS modules but encountered integration issues. An alternative app using the Google Map API was developed to overcome this challenge.
 - **NRF24L01+ Availability**: The required modules were not available on some circuit design software platforms, making virtual testing difficult.
+- ![image alt](https://github.com/abrar-khan-alvi/SilentSignal/blob/main/Screenshot%202025-05-03%20195426.png)
 
 ## Social and Economic Impacts
 ### Social Impacts
